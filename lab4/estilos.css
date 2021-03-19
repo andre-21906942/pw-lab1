@@ -1,0 +1,31 @@
+div h1 {
+    background-color:cyan;
+}
+
+div > p {
+    background-color: darkcyan;
+}
+
+div + p {
+    background-color: darkkhaki;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active{
+    color: green;
+}
+
+*{
+    font-family: Arial;
+}
+
+*{
+    background-color: cornsilk;
+}

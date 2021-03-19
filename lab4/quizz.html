@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="stylesheet" href="estilos.css">
+        <title>Lab 2</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="André Santos">
+        <meta name="keywords" content="Paris"> 
+        <meta name="description" content="Website sobre Paris">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    </head>
+    <body>
+        <body style="background-color:rgb(255, 255, 255)"></body>
+        <h1>Paris</h1>
+        <img src="images/img.jpg">
+        <br>
+        <a href="index.html"><b>Introdução</b></a>
+        <a href="local.html">Localização</a>
+        <a href="multimedia.html">Multimédia</a>
+        <a href="info.html">Informações</a>
+        <a href="quizz.html">Quizz</a>
+        <a href="comentarios.html">Comentarios</a>
+        <a href="../index.html">Home</a>
+        <h3>Quizz</h3>
+        <form autocomplete="on" action="mailto:andre.22.pbss@gmail.com">
+            <fieldset style="width: 25%;" >
+                <legend>Dados Pessoais:</legend>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" placeholder="Insira Nome" size="20" autofocus required><br>
+                <label for="apelido">Apelido:</label><br>
+                <input type="text" name="apelido" placeholder="Insira Apelido" size="20" required><br>
+                <label for="idade">Idade:</label><br>
+                <input type="text" name="idade" placeholder="Insira Idade" size="20" maxlength="2" required><br>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" placeholder="Insira Eamil" size="20" required autocomplete="off"><br>
+            </fieldset>
+            <fieldset style="width: 20%;">
+                <legend>Questionario:</legend>
+                <p>Paris é a capital de que País: <input type="text" name="pais"></p>
+                <p>Que lingua se fala em Paris:</p>
+                <input type="radio" id="pergunta1_1" name="frances" value="frances">
+                <label for="frances">Françes</label><br>
+                <input type="radio" id="pergunta1_2" name="espanhol" value="espanhol">
+                <label for="espanhol">Espanhol</label><br>
+                <input type="radio" id="pergunta1_3" name="portugues" value="portugues">
+                <label for="portugues">Portugues</label><br>
+                <p>Que clube de futebol joga na cidade de Paris:</p>
+                <input type="checkbox" id="pergunta2_1" name="lyon" value="Lyon">
+                <label for="lyon">Lyon</label>
+                <input type="checkbox" id="pergunra2_2" name="psg" value="PGG">
+                <label for="psg">P.S.G.</label>
+                <input type="checkbox" id="pergunta2_3" name="montpellier" value="Montpellier">
+                <label for="montpellier">Montpellier</label>
+                <p>Em que ano foi contruida a Torre Eiffel</p>
+                <input type="date" id="pergunta3_1" name="data" value="1887-1-28">
+                <label for="data"></label>
+                <p>De que cor e a Torre Eiffel:</p>
+                <input type="color" id="pergunta4_1" name="castanho" value="#ff0000">
+                <p>Qual é o tamanho da cidade de Paris:</p>
+                <input type="number" id="pergunta5_1" name="area" value="105,4 km²" step="100">
+                <p>Quantos Destritos tem Paris</p>
+                <label for="pergunta6_1">Destritos:</label>
+                <input type="range" id="pergunta6_1" name="destritos" min="1" max="17" value="0" oninput="nr.value = parseInt(destritos.value)">
+                <output name="nr" for="habitantes">1</output>
+                <p>Qual destes monumentos pertencem á cidade de Paris.</p>
+                <label for="pergunta7_1">Monumentos:</label>
+                <select id="monumentos" name="pergunta7_1" multiple>
+                    <option value="torre_eifell">Torre Eifell</option>
+                    <option value="torre_de_belem">Torre de Belém</option>
+                    <option value="catedral_de_notre_dame">Catedral de Notre-Dame</option>
+                    <option value="big_ben">Big Ben</option>
+                </select>
+                <br>
+                <input type="image" src="images/img_submit.png" alt="Submit" width="100" height="100">
+            </fieldset>
+        </form>
+    </body>
+</html>
